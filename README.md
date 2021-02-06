@@ -19,9 +19,9 @@ A Cycle-GAN is a special type of GAN which allows for style transfer between unp
 means that for a given set of content images, the model does not require a specific stylized image for each content
 image in order to learn style transfer. Cycle-GANs are extremely useful in image-to-image translation tasks as it
 is very hard to find paired images for training. We want to be able to transfer the artist’s general style to any content
-image. Our model consists of 2 generators G_{content} and G_{style} and their corresponding discriminators D_{content} and
-D_{style}. G_{content} takes as input the style images (Picasso’s artwork) and tries to generate scene images identical to
-that of our BOLD5000 Scene Stimuli dataset. G_{style} takes as input the content images (Scene Stimuli Images from
+image. Our model consists of 2 generators G<sub>content</sub> and G<sub>style</sub> and their corresponding discriminators D<sub>content</sub> and
+D<sub>style</sub>. G<sub>content</sub> takes as input the style images (Picasso’s artwork) and tries to generate scene images identical to
+that of our BOLD5000 Scene Stimuli dataset. G<sub>style</sub> takes as input the content images (Scene Stimuli Images from
 BOLD5000) and tries to generate images that resemble Picasso’s paintings as closely as possible. Their associated
 discriminators Dcontent and Dstyle learn to differentiate between the generated content and style images, and the
 actual content and style images by predicting if an image was generated or if it is present in the original dataset.
